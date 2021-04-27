@@ -15,21 +15,21 @@ class CalculatorBrain {
 
   String getResult() {
     if (_bmi >= 25) {
-      return 'Overweight';
+      return '超重';
     } else if (_bmi > 18.5) {
-      return 'Normal';
+      return '正常';
     } else {
-      return 'Underweight';
+      return '偏瘦';
     }
   }
 
   String getInterpretation() {
     if (_bmi >= 25) {
-      return 'You have a higher than normal body weight. Try to exercise more.';
+      return '你的体重比正常人高。多锻炼。';
     } else if (_bmi >= 18.5) {
-      return 'You have a normal body weight. Good job!';
+      return '你的体重正常。非常好！';
     } else {
-      return 'You have a lower than normal body weight. You can eat a bit more.';
+      return '你的体重低于正常体重。你可以多吃一点。';
     }
   }
 }
